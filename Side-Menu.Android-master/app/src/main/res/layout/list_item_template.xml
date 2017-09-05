@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:id="@+id/MyListItem"
+    android:paddingBottom="3sp"
+    android:paddingStart="10sp"
+    android:paddingEnd="10sp"
+    android:layout_marginBottom="3sp"
+    android:layout_marginTop="3sp">
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:visibility="invisible"
+        android:id="@+id/device_id"/>
+    <ImageView
+        android:id="@+id/device_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="90dp"
+        android:maxWidth="90dp"
+        android:paddingBottom="10sp"
+        android:paddingRight="20sp"
+        android:paddingTop="10sp"
+        android:src="@drawable/icon_bulb_blue"
+        />
+    <TextView
+        android:paddingBottom="10sp"
+        android:paddingRight="20sp"
+        android:paddingTop="20sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/ItemTitle"
+        android:textSize="20sp"
+        >
+    </TextView>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/ItemText">
+    </TextView>
+
+</LinearLayout>
