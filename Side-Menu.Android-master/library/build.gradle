@@ -21,6 +21,10 @@ android {
 }
 dependencies {
     compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.yolanda.nohttp:nohttp:1.1.0'
+    compile 'com.yanzhenjie:permission:1.1.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
 }
 
 task androidJavadocs(type: Javadoc) {

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Get info"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/get_power"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Power" />
+
+    <Button
+        android:id="@+id/get_sysinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sysinfo" />
+
+    <Button
+        android:id="@+id/get_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="time" />
+
+    <Button
+        android:id="@+id/get_timezone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="timezone" />
+
+    <Button
+        android:id="@+id/mon_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="mon detail" />
+
+    <Button
+        android:id="@+id/year_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="year detail" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Control"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/ctl_led_on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="led on" />
+
+    <Button
+        android:id="@+id/ctl_led_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="led off" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Console"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/upload_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="upload all" />
+</LinearLayout>
+</ScrollView>

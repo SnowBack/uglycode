@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">Side Menu</string>
+    <string name="app_name">Magic Plug</string>
     <string name="action_settings">Settings</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
 
+    <string name="take_photo">Take Photos</string>
+    <string name="take_video">Take a Video</string>
+    <string name="server_ip">192.168.0.104</string>
+    <string name="port">5000</string>
+    <string name="device_ip">192.168.0.101</string>
+    <string name="device_ip2">192.168.0.102</string>
+
+    <string name="notifyTitle">Alert</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">Setting</string>
+    <string name="cancel">Cancel</string>
 </resources>

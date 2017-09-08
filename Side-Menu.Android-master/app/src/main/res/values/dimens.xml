@@ -4,4 +4,8 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <dimen name="sliding_menu_width">80dp</dimen>
+    <dimen name="table_padding">16dp</dimen>
+    <dimen name="table_item_title">16sp</dimen>
+    <dimen name="table_item_value">20sp</dimen>
+    <dimen name="plug_image_width">80sp</dimen>
 </resources>

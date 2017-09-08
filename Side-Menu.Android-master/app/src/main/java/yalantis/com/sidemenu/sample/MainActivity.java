@@ -1,9 +1,13 @@
 package yalantis.com.sidemenu.sample;
 
+import android.content.Context;
 import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -27,7 +31,7 @@ import yalantis.com.sidemenu.sample.fragment.ContentFragment;
 import yalantis.com.sidemenu.util.ViewAnimator;
 
 
-public class MainActivity extends AppCompatActivity implements ViewAnimator.ViewAnimatorListener {
+public class MainActivity extends CheckPermissionsActivity implements ViewAnimator.ViewAnimatorListener {
     public static int PAGE_TAG_WEBVIEW = 1;
     public static int PAGE_TAG_PLUG = 2;
 
@@ -39,6 +43,9 @@ public class MainActivity extends AppCompatActivity implements ViewAnimator.View
     private int res = PAGE_TAG_WEBVIEW;
     private LinearLayout linearLayout;
 
+    public static Handler handler_draw = null;
+    private static Context mycontext = null;
+    private static FragmentManager FM = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,6 +64,9 @@ public class MainActivity extends AppCompatActivity implements ViewAnimator.View
             }
         });
 
+        handler_draw = new Handler();
+        mycontext = getApplicationContext();
+        FM = getSupportFragmentManager();
         setActionBar();
         createMenuList();
         viewAnimator = new ViewAnimator<>(this, list,
@@ -77,7 +87,6 @@ public class MainActivity extends AppCompatActivity implements ViewAnimator.View
                 R.drawable.icn_3);
         list.add(menuItem3);
     }
-
 
     private void setActionBar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -126,7 +135,6 @@ public class MainActivity extends AppCompatActivity implements ViewAnimator.View
         super.onConfigurationChanged(newConfig);
         drawerToggle.onConfigurationChanged(newConfig);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -183,18 +191,20 @@ public class MainActivity extends AppCompatActivity implements ViewAnimator.View
     @Override
     public void disableHomeButton() {
         getSupportActionBar().setHomeButtonEnabled(false);
-
     }
 
     @Override
     public void enableHomeButton() {
         getSupportActionBar().setHomeButtonEnabled(true);
         drawerLayout.closeDrawers();
-
     }
 
     @Override
     public void addViewToContainer(View view) {
         linearLayout.addView(view);
     }
+    public static Context myGetContext(){
+        return mycontext;
+    }
+    public static FragmentManager myGetFM(){return FM;}
 }

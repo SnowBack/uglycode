@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center"
+        android:maxWidth="@dimen/plug_image_width"
+        android:src="@drawable/icon_bulb_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/plug_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15sp"
+        android:layout_marginTop="15sp"
+        android:gravity="center"
+        android:text="plug 1"
+        android:textColor="@color/light_blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/plug_details"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFF"
+        android:divider="#EEE"
+        android:dividerHeight="1sp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/table_padding"
+            android:paddingBottom="@dimen/table_padding"
+            >
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/table_padding"
+                    android:textSize="@dimen/table_item_title"
+                    android:text="POWER" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/table_item_value"
+                    android:text="gggg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/table_item_title"
+                    android:text="gggg" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/table_padding"
+            android:paddingBottom="@dimen/table_padding"
+            >
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/power_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/table_item_title"
+                    android:text="gggg" />
+
+                <TextView
+                    android:id="@+id/power_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/table_item_value"
+                    android:text="hahah" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/table_item_title"
+                    android:text="gggg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/table_item_value"
+                    android:text="hahah" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/table_padding"
+            android:paddingBottom="@dimen/table_padding"
+            >
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/table_item_title"
+                    android:text="gggg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/table_item_value"
+                    android:text="hahah" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gggg"
+                    android:textSize="@dimen/table_item_title"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/table_item_value"
+                    android:text="hahah" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

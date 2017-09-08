@@ -4,29 +4,34 @@
     android:layout_height="match_parent">
 
     <!--<ScrollView-->
-        <!--android:id="@+id/container_pluglist"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent">-->
+    <!--android:id="@+id/container_pluglist"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
 
-<RelativeLayout
-    android:id="@+id/container_pluglist"
-    android:background="#FFF"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-        <!--<ImageView-->
-        <!--android:scaleType="fitXY"-->
-        <!--android:id="@+id/image_content"-->
-        <!--android:src="@drawable/content_films"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"/>-->
+    <RelativeLayout
+        android:id="@+id/container_pluglist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF">
 
         <ListView
             android:id="@+id/pluglist"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:divider="#EEE"
             android:dividerHeight="2sp"
-            />
-</RelativeLayout>
+            android:footerDividersEnabled="true" />
+
+        <Button
+            android:id="@+id/add_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pluglist"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dip"
+            android:background="@drawable/button_border"
+            android:text="add device" />
+
+    </RelativeLayout>
     <!--</ScrollView>-->
 </io.codetail.widget.RevealFrameLayout>
